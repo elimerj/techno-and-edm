@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <h1>Rock & EDM Festival</h1>
+
+        <nav class="principal-navegation">
+          <a href="#lineup" class="nav-link">Line Up</a>
+          <a href="#gallery" class="nav-link">Galeria</a>
+          <a href="#tickets" class="nav-link">Boletos</a>
+        </nav>
+      </div>
+    </header>
+    <div class="video">
+      <div class="overlay">
+        <div class="container video-container">
+          <h2>Rock & EDM Festival</h2>
+          <p>Julio 2022, Guadalajara, Mexico.</p>
+        </div>
+      </div>
+      <video autoplay muted loop>
+        <source src="./video/concierto.mp4" type="video/mp4" />
+        <source src="./video/concierto.ogg" type="video/ogg" />
+        <source src="./video/concierto.webm" type="video/webm" />
+      </video>
+    </div>
+    <section class="container about-festival">
+      <div class="imagen">
+        <picture>
+          <source srcset="public/img/imagen_vocalista.avif" type="image/avif" />
+          <source srcset="public/img/imagen_vocalista.webp" type="image/webp" />
+          <img
+            width="200"
+            height="300"
+            loading="lazy"
+            src="/public/img/imagen_vocalista.jpg"
+            alt="imagen_vocalista"
+          />
+        </picture>
+      </div>
+      <div class="festival-container">
+        <h2>Rock & EDM Festival</h2>
+        <p class="date">Julio 2022 Guadalajara, Mexico</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Perspiciatis, cumque? Facere sint, odit vitae saepe eius aut debitis
+          assumenda error quam excepturi consequatur voluptates voluptas
+          voluptatibus quia optio facilis. Sequi.
+        </p>
+      </div>
+    </section>
+    <section id="lineup" class="lineup">
+      <h3>Line Up</h3>
+      <p class="day">Viernes 21</p>
+      <div class="container-scenary container">
+        <article class="scenary rock bg-yellow">
+          <p class="scenary-name">Escenario Rock</p>
+          <ul class="calendary">
+            <li>24:00 | <span>Metallica</span></li>
+            <li>22:00 | <span>Pearl Jam</span></li>
+            <li>20:00 | <span>KoRn</span></li>
+            <li>19:00 | <span>Muse</span></li>
+            <li>18:00 | <span>Breaking Benjamin</span></li>
+            <li>17:00 | <span>30 Seconds to Mars</span></li>
+          </ul>
+        </article>
+        <!--.scenary-end-->
+        <article class="scenary edm bg-green">
+          <p class="scenary-name">Escenario EDM</p>
+          <ul class="calendary">
+            <li>24:00 | <span>Deadmau5</span></li>
+            <li>22:00 | <span>Tïesto</span></li>
+            <li>20:00 | <span>Hardwell</span></li>
+            <li>19:00 | <span>Dash Berlin</span></li>
+            <li>18:00 | <span>Fedde Legrand</span></li>
+            <li>17:00 | <span>Audien</span></li>
+          </ul>
+        </article>
+        <!--.scenary-end-->
+      </div>
+      <p class="day">Sabado 22</p>
+      <div class="container-scenary container">
+        <article class="scenary rock bg-green">
+          <p class="scenary-name">Escenario Rock</p>
+          <ul class="calendary">
+            <li>24:00 | <span>Red Hot Chili Peppers</span></li>
+            <li>22:00 | <span>The Killers</span></li>
+            <li>20:00 | <span>Deftones</span></li>
+            <li>19:00 | <span>Limp Bizkit</span></li>
+            <li>18:00 | <span>Papa Roach</span></li>
+            <li>17:00 | <span>Lamb of God</span></li>
+          </ul>
+        </article>
+        <!--.scenary-end-->
+        <article class="scenary edm bg-yellow">
+          <p class="scenary-name">Escenario EDM</p>
+          <ul class="calendary">
+            <li>24:00 | <span>Paul Van Dyk</span></li>
+            <li>22:00 | <span>Armin Van Buuren</span></li>
+            <li>20:00 | <span>Above & Beyond</span></li>
+            <li>19:00 | <span>Eric Prdyz</span></li>
+            <li>18:00 | <span>Ferry Corsten</span></li>
+            <li>17:00 | <span>Vini Vici</span></li>
+          </ul>
+        </article>
+        <!--.scenary-end-->
+      </div>
+      <!--container-scenary-end-->
+    </section>
+    <!--lineup-end-->
+
+    <section id="gallery" class="gallery container">
+      <h3>Galeria</h3>
+      <ul class="imagen-gallery"></ul>
+    </section>
+
+    <section id="tickets" class="tickets bg-green">
+      <h3>Boletos</h3>
+      <div class="container ticket-container">
+        <article class="basic pase">
+          <p class="pase-name">Pase 1 dia</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y Bebidas</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$100</p>
+          </footer>
+        </article>
+        <article class="premium pase">
+          <p class="pase-name">Pase 2 dias</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y Bebida</li>
+              <li>Camisa del Evento</li>
+              <li>Acceso VIP</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$180</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <!--gallery-end-->
+
+    <footer class="site-footer">
+      <p>Rock $ EDM Festival. Todos los Derechos Reservados.</p>
+    </footer>
+    <script src="/public/js/app.js"></script>
+  </body>
+</html>
